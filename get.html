@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI Elements</title>
+    <link rel="stylesheet" href="get.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+    <nav>
+        <h2><a style="color: var(--highlight) ;">UI</a>Nasty+
+            &emsp;
+        
+        </h2>
+
+        <div class="hamburger" id="menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+
+    </nav>
+    <aside>
+        <iframe src="aside.html" frameborder="0" class="asideMenu"></iframe>
+    </aside>
+
+    <article class="home">
+        <iframe src="asideGet.html" frameborder="0" class="choice"></iframe>
+        <section class="side">
+            <div class="btn">
+                <a href="landing.html">
+                    &leftarrow; Go back
+                </a>
+            </div>
+            <div class="konten">
+                <div class="left">
+                    <button class="btn"> Button
+                    </button>
+                </div>
+
+                <div class="right" id="right">
+                    <div class="pilih">
+                        <span class="html"> <img src="asset/html.png" width="20" alt=""> HTML</span>
+                        <span class="css"> <img src="asset/css.png" width="20" alt=""> CSS</span>
+                    </div>
+                    <button type="button" class="copy">Copy</button>
+                    <textarea name="" id="" cols="30" rows="10" class="muncul-1">
+1. .btn {
+2. --color2: rgb(10, 25, 30);
+3. padding: 0.8em 1.75em;
+4. background-color: transparent;
+5. border-radius: 6px;
+6. border: .3px solid var(--color);
+7. transition: .5s;
+8. position: relative;
+9. overflow: hidden;
+10. cursor: pointer;
+11. z-index: 1;;--color: #00A97F
+12. font-weight: 300;
+13. font-size: 17px;
+14. font-family: 'Roboto', 
+'Segoe UI', sans-serif;
+15. text-transform: uppercase;
+16. color: var(--color);
+17. }
+18.
+19. btn::after, .btn::before {
+20. content: '';
+21. display: block;
+22. height: 100%;
+23. width: 100%;
+24. transform: skew(90deg) 
+translate(-50%, -50%);
+25. position: absolute;
+26. inset: 50%;8   left: 25%;
+27. z-index: -1;
+28. transition: .5s ease-out;
+29. background-color: var(--color)20 }
+30
+31. btn::before {
+32. top: -50%;
+33. left: -25%;
+34. transform: skew(90deg) 
+rotate(180deg) translate(-50%, -50%);
+35. }
+36. 
+37. .btn:hover::before {
+38. transform: skew(45deg) 
+rotate(180deg) translate(-50%, -50%);
+39. }
+40. 
+41. .btn:hover::after {
+42.  transform: skew(45deg)
+translate(-50%, -50%);
+43. }
+44. 
+45. .btn:hover {
+46.  color: var(--color2);
+47. }
+48. 
+49. .btn:active {
+50.  filter: brightness(.7);
+51.  transform: scale(.98);
+52. }
+</textarea>
+                    <textarea name="" id="" cols="30" rows="10" class="muncul-2">
+1. <button class="btn">
+2. Button
+3. </button>
+</textarea>
+                </div>
+
+            </div>
+            <section class="last">
+                <div class="komen">
+                    <!-- <img src="asset/one.png" alt="" width="60"> -->
+                    <input type="text" name="text" id="komen" placeholder="Send a first comment...">
+                    <input type="submit" value="Send" class="submit"></input>
+                </div>
+                <div class="prof">
+                    <div class="column">
+                        <span>
+                            <img src="asset/two.png" alt="" width="50">
+                            <strong>Person47
+                                <br>
+                                <p>
+                                    Person beauty aeshtetic girl
+                                </p>
+                            </strong>
+                        </span>
+                       
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        </div>
+    </article>
+    <footer>
+        <div class="kiri">
+            <h2>
+                <span style="font-size: 2rem; color: var(--highlight);"> UI Ren</span>
+                <br>
+                Universe of UI; Hundreds of Open <br> Source UI elements
+            </h2>
+            <h2>
+                <span style="font-size: 2rem; color: var(--highlight);"> Nasty Licensi</span>
+                <br>
+                All content (UI elements) on this <br> site are published under the MIT License.
+            </h2>
+            <h2>
+                <i data-feather="instagram"></i>
+                <i data-feather="twitter"></i>
+                <i data-feather="facebook"></i>
+
+            </h2>
+
+        </div>
+
+        <div class="kanan">
+            <div class="one">
+                <h2 style="font-size: 2rem; color: var(--highlight);">information</h2>
+                <p>post guidelines</p>
+            </div>
+            <div class="two">
+                <h2 style="font-size: 2rem; color: var(--highlight);">Legal</h2>
+                <p>Privacy Police</p>
+                <p>Cookie Policy</p>
+                <p>Disclaimer</p>
+                <h2 h2 style="font-size: 1.5rem; color: var(--highlight);">
+                    © 2023 Pixel Galaxies. All rights reserved. <br> - UiNasty.io
+                </h2>
+            </div>
+
+        </div>
+    </footer>
+    <script src="uiren.js"></script>
+    <script src="get.js"></script>
+</body>
+
+</html>
